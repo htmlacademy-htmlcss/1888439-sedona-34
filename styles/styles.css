@@ -1,0 +1,256 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.page-header {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.navigation-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.welcome-container {
+  background-color: rgba(131, 179, 211, 0.7);
+  background-image: url("../images/index-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.index-heading {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.reasons-title {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #333333;
+}
+
+.reasons-item-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.reasons-subreasons {
+  background-color: #ffffff;
+}
+
+.reasons-item {
+  background-color: #82B3D3;
+  color: #ffffff;
+}
+
+.reasons-item-light,
+.reasons-item-normal,
+.reasons-item-dark {
+  color: #000000;
+}
+
+.reasons-item-light .reasons-description,
+.reasons-item-normal .reasons-description,
+.reasons-item-dark .reasons-description {
+  color: #333333;
+}
+
+.reasons-item-light {
+  background-color: #ffffff;
+}
+
+.reasons-item-normal {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.reasons-item-dark {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.booking-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.booking-suggestion {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #333333;
+}
+
+.subscription-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.subscription-promise {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #333333;
+}
+
+.subscription-email {
+  background-color: #F2F2F2;
+}
+
+.subscription-email::placeholder {
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  opacity: 0.6;
+}
+
+.subscription-main {
+  background-color: rgba(131, 179, 211, 0.7);;
+  background-image: url("../images/subscribe-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  color: #FFFFFF;
+}
+
+.subscription-main .subscription-promise {
+  color: inherit;
+}
+
+.phone {
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.catalog-wrapper {
+  background-color: rgba(131, 179, 211, 0.7);;
+  background-image: url("../images/filters-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  color: #ffffff;
+}
+
+.catalog-title {
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+}
+
+.filter-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.price-filter-label {
+  color: #ffffff;
+  opacity: 0.3;
+}
+
+.price-filter-input {
+  font-size: inherit;
+  line-height: inherit;
+  color: white;
+  background-color: transparent;
+}
+
+.filters-form-reset {
+  font-size: 16px;
+  line-height: 20px;
+  color: inherit;
+  background-color: transparent;
+}
+
+.offers-title {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.ordering {
+  font-size: inherit;
+  line-height: inherit;
+  color: #333333;
+}
+
+.hotels-title {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.hotels-info {
+  color: #333333;
+}
+
+.hotels-rating {
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+  background-color: #F2F2F2;
+}
+
+.pagination {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.pagination-link {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #82B3D3;
+}
+
+.pagination-link-current {
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+.page-limiter {
+  color: #333333;
+}
+
+.button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #756157;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button-additional {
+  background-color: #82B3D3;
+}
+
+.button-selected {
+  background-color: #7DB54F;
+}
