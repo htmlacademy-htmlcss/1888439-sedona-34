@@ -15,7 +15,7 @@
 }
 
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 21px;
 }
@@ -32,7 +32,7 @@ body {
 }
 
 .welcome-container {
-  background-color: rgba(131, 179, 211, 0.7);
+  background-color: #aaaaaa;
   background-image: url("../images/index-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -52,43 +52,39 @@ body {
   color: #333333;
 }
 
-.reasons-item-title {
-  font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
-}
-
-.reasons-subreasons {
-  background-color: #ffffff;
-}
-
 .reasons-item {
-  background-color: #82B3D3;
-  color: #ffffff;
-}
-
-.reasons-item-light,
-.reasons-item-normal,
-.reasons-item-dark {
-  color: #000000;
-}
-
-.reasons-item-light .reasons-description,
-.reasons-item-normal .reasons-description,
-.reasons-item-dark .reasons-description {
+  background-color: #ffffff;
   color: #333333;
 }
 
+.reasons-item-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.reasons-description {
+  font-size: 18px;
+  line-height: 21px;
+}
+
 .reasons-item-light {
-  background-color: #ffffff;
+  background-color: #f0f5f9;
 }
 
 .reasons-item-normal {
-  background-color: rgba(131, 179, 211, 0.12);
+  background-color: #e6f0f6;
 }
 
 .reasons-item-dark {
-  background-color: rgba(131, 179, 211, 0.2);
+  background-color: #82b3d3;
+  color: #ffffff;
+}
+
+.reasons-item-dark > .reasons-item-title {
+  color: #ffffff;
 }
 
 .booking-title {
@@ -119,7 +115,7 @@ body {
 }
 
 .subscription-email {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .subscription-email::placeholder {
@@ -130,11 +126,11 @@ body {
 }
 
 .subscription-main {
-  background-color: rgba(131, 179, 211, 0.7);;
+  background-color: #aaaaaa;
   background-image: url("../images/subscribe-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .subscription-main .subscription-promise {
@@ -149,7 +145,7 @@ body {
 }
 
 .catalog-wrapper {
-  background-color: rgba(131, 179, 211, 0.7);;
+  background-color: #aaaaaa;
   background-image: url("../images/filters-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -158,11 +154,13 @@ body {
 
 .catalog-title {
   font-size: 60px;
+  font-weight: 700;
   line-height: 78px;
 }
 
 .breadcrumbs-link {
   font-size: 16px;
+  line-height: 21px;
 }
 
 .filter-title {
@@ -171,15 +169,22 @@ body {
   line-height: 26px;
 }
 
+.control {
+  font-size: 18px;
+  line-height: 21px;
+}
+
 .price-filter-label {
+  font-size: 18px;
+  line-height: 21px;
   color: #ffffff;
   opacity: 0.3;
 }
 
 .price-filter-input {
-  font-size: inherit;
-  line-height: inherit;
-  color: white;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
   background-color: transparent;
 }
 
@@ -192,21 +197,25 @@ body {
 
 .offers-title {
   font-size: 30px;
+  font-weight: 700;
   line-height: 36px;
 }
 
 .ordering {
-  font-size: inherit;
-  line-height: inherit;
+  font-size: 18px;
+  line-height: 21px;
   color: #333333;
 }
 
 .hotels-title {
   font-size: 24px;
+  font-weight: 700;
   line-height: 28px;
 }
 
 .hotels-info {
+  font-size: 18px;
+  line-height: 21px;
   color: #333333;
 }
 
@@ -214,7 +223,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #333333;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .pagination {
@@ -225,15 +234,17 @@ body {
 .pagination-link {
   color: #ffffff;
   text-decoration: none;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .pagination-link-current {
   color: #000000;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .page-limiter {
+  font-size: 18px;
+  line-height: 21px;
   color: #333333;
 }
 
@@ -248,9 +259,9 @@ body {
 }
 
 .button-additional {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .button-selected {
-  background-color: #7DB54F;
+  background-color: #7db54f;
 }
