@@ -255,6 +255,27 @@ img {
   text-align: center;
 }
 
+.reason-motel {
+  background-image: url("../images/house.svg");
+  background-repeat: no-repeat;
+  background-size: 75px 72px;
+  background-position: 50% 80px;
+}
+
+.reason-food {
+  background-image: url("../images/burger.svg");
+  background-repeat: no-repeat;
+  background-size: 75px 72px;
+  background-position: 50% 80px;
+}
+
+.reason-souvenirs {
+  background-image: url("../images/souvenir.svg");
+  background-repeat: no-repeat;
+  background-size: 75px 72px;
+  background-position: 50% 80px;
+}
+
 .booking {
   padding: 0;
   padding-top: 91px;
