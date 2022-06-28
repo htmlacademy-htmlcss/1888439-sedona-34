@@ -25,21 +25,15 @@
             </li>
           </ul>
         </nav>
-        <ul class="header-actions-list">
-          <li class="header-action-item">
-            <a class="search" href="#">
-              <span class="visually-hidden">Поиск</span>
-            </a>
-          </li>
-          <li class="header-action-item">
-            <a class="like-it" href="#">
-              <span class="visually-hidden">Мне нравится</span>
-            </a>
-          </li>
-          <li class="header-action-item">
-            <a class="button button-brown" href="#">Хочу сюда!</a>
-          </li>
-        </ul>
+        <div class="header-actions">
+          <a class="search" href="#">
+            <span class="visually-hidden">Поиск</span>
+          </a>
+          <a class="like-it" href="#">
+            <span class="visually-hidden">Мне нравится</span>
+          </a>
+          <a class="button button-brown" href="#">Хочу сюда!</a>
+        </div>
       </header>
 
 
@@ -65,7 +59,7 @@
 
             <form class="filters-form" action="https://echo.htmlacademy.ru" method="GET">
               <div class="filters-form-left">
-                <fieldset class="filters-form-group">
+                <fieldset class="filter-form-group">
                   <legend class="filter-title">Инфраструктура:</legend>
                   <ul class="filter-list">
                     <li class="filter-item">
@@ -115,7 +109,7 @@
               </div>
 
               <div class="filters-form-right">
-                <fieldset class="filters-form-group">
+                <fieldset class="filter-form-group">
                   <legend class="filter-title">Стоимость, ₽:</legend>
                   <div class="price-filter price-filter-from">
                     <label class="price-filter-label" for="price-from">от</label>
@@ -171,80 +165,96 @@
 
           <ul class="hotels-list">
             <li class="hotels-item">
-              <h3 class="hotels-title">Amara Resort & Spa</h3>
-              <img class="hotels-image" src="images/hotels/hotel-1.jpg" width="300" height="211" alt="Amara Resort & Spa">
-              <p class="hotels-info">
-                <span class="hotels-type">Гостиница</span>
-                <span class="hotels-price">От 4000 ₽</span>
-              </p>
-              <a class="button" href="#">Подробнее</a>
-              <a class="button button-additional" href="#">В избранное</a>
-              <p class="hotel-rating-stars">
-                <span class="hotels-rating-star hotels-rating-star-active"></span>
-                <span class="hotels-rating-star hotels-rating-star-active"></span>
-                <span class="hotels-rating-star hotels-rating-star-active"></span>
-                <span class="hotels-rating-star hotels-rating-star-active"></span>
-                <span class="hotels-rating-star"></span>
-                <span class="visually-hidden">4 звезды</span>
-              </p>
-              <p class="hotels-rating">Рейтинг: 8,5</p>
+                <h3 class="hotels-title">Amara Resort & Spa</h3>
+                <img class="hotels-image" src="images/hotels/hotel-1.jpg" width="300" height="211" alt="Amara Resort & Spa">
+                <p class="hotels-info">
+                  <span class="hotels-type">Гостиница</span>
+                  <span class="hotels-price">От 4000 ₽</span>
+                </p>
+                <div class="hotels-buttons">
+                  <a class="button" href="#">Подробнее</a>
+                  <a class="button button-additional" href="#">В избранное</a>
+                </div>
+                <div class="hotels-stats">
+                  <p class="hotels-rating-stars">
+                    <span class="hotels-rating-star hotels-rating-star-active"></span>
+                    <span class="hotels-rating-star hotels-rating-star-active"></span>
+                    <span class="hotels-rating-star hotels-rating-star-active"></span>
+                    <span class="hotels-rating-star hotels-rating-star-active"></span>
+                    <span class="hotels-rating-star"></span>
+                    <span class="visually-hidden">4 звезды</span>
+                  </p>
+                  <p class="hotels-rating">Рейтинг: 8,5</p>
+                </div>
             </li>
             <li class="hotels-item">
-              <h3 class="hotels-title">Villas at Poco Diablo</h3>
-              <img class="hotels-image" src="images/hotels/hotel-2.jpg" width="300" height="211" alt="Villas at Poco Diablo">
-              <p class="hotels-info">
-                <span class="hotels-type">Гостиница</span>
-                <span class="hotels-price">От 5000 ₽</span>
-              </p>
-              <a class="button" href="#">Подробнее</a>
-              <a class="button button-selected" href="#">В избранном</a>
-              <p class="hotel-rating-stars">
-                <span class="hotels-rating-star hotels-rating-star-active"></span>
-                <span class="hotels-rating-star hotels-rating-star-active"></span>
-                <span class="hotels-rating-star hotels-rating-star-active"></span>
-                <span class="hotels-rating-star hotels-rating-star-active"></span>
-                <span class="hotels-rating-star"></span>
-                <span class="visually-hidden">4 звезды</span>
-              </p>
-              <p class="hotels-rating">Рейтинг: 9,2</p>
+                <h3 class="hotels-title">Villas at Poco Diablo</h3>
+                <img class="hotels-image" src="images/hotels/hotel-2.jpg" width="300" height="211" alt="Villas at Poco Diablo">
+                <p class="hotels-info">
+                  <span class="hotels-type">Гостиница</span>
+                  <span class="hotels-price">От 5000 ₽</span>
+                </p>
+                <div class="hotels-buttons">
+                  <a class="button" href="#">Подробнее</a>
+                  <a class="button button-selected" href="#">В избранном</a>
+                </div>
+                <div class="hotels-stats">
+                  <p class="hotels-rating-stars">
+                    <span class="hotels-rating-star hotels-rating-star-active"></span>
+                    <span class="hotels-rating-star hotels-rating-star-active"></span>
+                    <span class="hotels-rating-star hotels-rating-star-active"></span>
+                    <span class="hotels-rating-star hotels-rating-star-active"></span>
+                    <span class="hotels-rating-star"></span>
+                    <span class="visually-hidden">4 звезды</span>
+                  </p>
+                  <p class="hotels-rating">Рейтинг: 9,2</p>
+                </div>
             </li>
             <li class="hotels-item">
-              <h3 class="hotels-title">Desert Quail Inn</h3>
-              <img class="hotels-image" src="images/hotels/hotel-3.jpg" width="300" height="211" alt="Desert Quail Inn">
-              <p class="hotels-info">
-                <span class="hotels-type">Гостиница</span>
-                <span class="hotels-price">От 2500 ₽</span>
-              </p>
-              <a class="button" href="#">Подробнее</a>
-              <a class="button button-additional" href="#">В избранное</a>
-              <p class="hotel-rating-stars">
-                <span class="hotels-rating-star hotels-rating-star-active"></span>
-                <span class="hotels-rating-star hotels-rating-star-active"></span>
-                <span class="hotels-rating-star hotels-rating-star-active"></span>
-                <span class="hotels-rating-star"></span>
-                <span class="hotels-rating-star"></span>
-                <span class="visually-hidden">3 звезды</span>
-              </p>
-              <p class="hotels-rating">Рейтинг: 6,9</p>
+                <h3 class="hotels-title">Desert Quail Inn</h3>
+                <img class="hotels-image" src="images/hotels/hotel-3.jpg" width="300" height="211" alt="Desert Quail Inn">
+                <p class="hotels-info">
+                  <span class="hotels-type">Гостиница</span>
+                  <span class="hotels-price">От 2500 ₽</span>
+                </p>
+                <div class="hotels-buttons">
+                  <a class="button" href="#">Подробнее</a>
+                  <a class="button button-additional" href="#">В избранное</a>
+                </div>
+                <div class="hotels-stats">
+                  <p class="hotels-rating-stars">
+                    <span class="hotels-rating-star hotels-rating-star-active"></span>
+                    <span class="hotels-rating-star hotels-rating-star-active"></span>
+                    <span class="hotels-rating-star hotels-rating-star-active"></span>
+                    <span class="hotels-rating-star"></span>
+                    <span class="hotels-rating-star"></span>
+                    <span class="visually-hidden">3 звезды</span>
+                  </p>
+                  <p class="hotels-rating">Рейтинг: 6,9</p>
+                </div>
             </li>
             <li class="hotels-item">
-              <h3 class="hotels-title">GreenTree Inn</h3>
-              <img class="hotels-image" src="images/hotels/hotel-4.jpg" alt="GreenTree Inn">
-              <p class="hotels-info">
-                <span class="hotels-type">Гостиница</span>
-                <span class="hotels-price">От 1500 ₽</span>
-              </p>
-              <a class="button" href="#">Подробнее</a>
-              <a class="button button-additional" href="#">В избранное</a>
-              <p class="hotel-rating-stars">
-                <span class="hotels-rating-star hotels-rating-star-active"></span>
-                <span class="hotels-rating-star hotels-rating-star-active"></span>
-                <span class="hotels-rating-star"></span>
-                <span class="hotels-rating-star"></span>
-                <span class="hotels-rating-star"></span>
-                <span class="visually-hidden">2 звезды</span>
-              </p>
-              <p class="hotels-rating">Рейтинг: 5,0</p>
+                <h3 class="hotels-title">GreenTree Inn</h3>
+                <img class="hotels-image" src="images/hotels/hotel-4.jpg" alt="GreenTree Inn">
+                <p class="hotels-info">
+                  <span class="hotels-type">Гостиница</span>
+                  <span class="hotels-price">От 1500 ₽</span>
+                </p>
+                <div class="hotels-buttons">
+                  <a class="button" href="#">Подробнее</a>
+                  <a class="button button-additional" href="#">В избранное</a>
+                </div>
+                <div class="hotels-stats">
+                  <p class="hotels-rating-stars">
+                    <span class="hotels-rating-star hotels-rating-star-active"></span>
+                    <span class="hotels-rating-star hotels-rating-star-active"></span>
+                    <span class="hotels-rating-star"></span>
+                    <span class="hotels-rating-star"></span>
+                    <span class="hotels-rating-star"></span>
+                    <span class="visually-hidden">2 звезды</span>
+                  </p>
+                  <p class="hotels-rating">Рейтинг: 5,0</p>
+                </div>
             </li>
           </ul>
 
@@ -273,13 +283,14 @@
               </li>
             </ul>
 
-            <label class="page-limiter">Гостиниц на странице:
-              <select class="page-limiter-select">
+            <div class="page-limiter">
+              <label class="page-limiter-title" for="limiter-selector">Гостиниц на странице:</label>
+              <select class="page-limiter-select" id="limiter-selector">
                 <option class="page-limiter-item" value="4">4</option>
                 <option class="page-limiter-item" value="5">5</option>
                 <option class="page-limiter-item" value="6">6</option>
               </select>
-            </label>
+            </div>
           </div>
         </section>
 
@@ -291,7 +302,7 @@
           <form class="subscription-form" action="https://echo.htmlacademy.ru" method="POST">
             <label class="visually-hidden" for="email">Электронная почта</label>
             <input class="subscription-email" id="email" type="email" name="email" placeholder="Ваш e-mail" required>
-            <button class="button button-additional" type="submit">Подписаться</button>
+            <button class="button button-additional button-big" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
