@@ -60,13 +60,13 @@ img {
 
 .navigation {
   display: flex;
-  width: 600px;
+  max-width: 800px;
   margin-right: auto;
 }
 
 .navigation-logo {
   position: relative;
-  width: 139px;
+  min-width: 139px;
   height: 100%;
   margin-right: 30px;
 }
@@ -104,7 +104,6 @@ img {
 
 .search {
   display: block;
-  height: 100%;
   min-width: 42px;
   background-image: url("../images/icons/search.svg");
   background-repeat: no-repeat;
@@ -113,7 +112,6 @@ img {
 
 .like-it {
   display: block;
-  height: 100%;
   min-width: 42px;
   margin-right: 20px;
   background-image: url("../images/icons/heart.svg");
@@ -129,7 +127,7 @@ img {
   background-image: url("../images/divider.svg"), url("../images/index-background.jpg");
   background-repeat: no-repeat, no-repeat;
   background-size: 100% auto, 100% auto;
-  background-position: 0 100%;
+  background-position: center bottom, center top;
 }
 
 .welcome-message {
@@ -235,16 +233,15 @@ img {
   width: 230px;
   margin: 0 auto;
   margin-bottom: 30px;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 .reasons-count::before {
-  content: '—';
+  content: '— №';
 }
 
 .reasons-count::after {
-  content: '—';
+  content: ' —';
 }
 
 .reasons-description {
@@ -283,7 +280,7 @@ img {
 }
 
 .booking-title {
-  width: 297px;
+  width: 300px;
   margin: 0 auto;
   margin-bottom: 29px;
   font-size: 30px;
@@ -320,7 +317,7 @@ img {
 }
 
 .subscription-title {
-  width: 404px;
+  width: 405px;
   margin: 0 auto;
   margin-bottom: 29px;
   font-size: 30px;
@@ -740,9 +737,11 @@ img {
   padding-right: 22px;
   padding-bottom: 8px;
   padding-left: 23px;
+  border-radius: 4px;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+  text-transform: uppercase;
   color: #333333;
   background-color: #f2f2f2;
 }
