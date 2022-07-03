@@ -70,20 +70,23 @@
                   <ul class="filter-list">
                     <li class="filter-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="swimming-pool" checked>
-                        Бассейн
+                        <input class="control-input visually-hidden" type="checkbox" name="swimming-pool" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Бассейн</span>
                       </label>
                     </li>
                     <li class="filter-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="parking" checked>
-                        Парковка
+                        <input class="control-input visually-hidden" type="checkbox" name="parking" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Парковка</span>
                       </label>
                     </li>
                     <li class="filter-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="wi-fi">
-                        Wi-Fi
+                        <input class="control-input visually-hidden" type="checkbox" name="wi-fi">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Wi-Fi</span>
                       </label>
                     </li>
                   </ul>
@@ -94,20 +97,23 @@
                   <ul class="filter-list">
                     <li class="filter-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="housing-type" value="hotel" checked>
-                        Гостиница
+                        <input class="control-input visually-hidden" type="radio" name="housing-type" value="hotel" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Гостиница</span>
                       </label>
                     </li>
                     <li class="filter-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="housing-type" value="motel">
-                        Мотель
+                        <input class="control-input visually-hidden" type="radio" name="housing-type" value="motel">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Мотель</span>
                       </label>
                     </li>
                     <li class="filter-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="housing-type" value="apartments">
-                        Апартаменты
+                        <input class="control-input visually-hidden" type="radio" name="housing-type" value="apartments">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Апартаменты</span>
                       </label>
                     </li>
                   </ul>
@@ -128,9 +134,13 @@
                     </div>
                   </div>
                   <div class="price-filter price-filter-slider">
-                    <div class="price-filter-slider-range"></div>
-                    <span class="price-filter-slider-handle"></span>
-                    <span class="price-filter-slider-handle"></span>
+                    <div class="price-filter-slider-range" style="left: 0; right: 20%;"></div>
+                    <button class="price-filter-slider-handle price-filter-slider-left-handle" type="button" style="left: 0;">
+                      <span class="visually-hidden">Изменить минимальную цену</span>
+                    </button>
+                    <button class="price-filter-slider-handle price-filter-slider-right-handle" type="button" style="right: 20%">
+                      <span class="visually-hidden">Изменить максимальную цену</span>
+                    </button>
                   </div>
                 </fieldset>
 
