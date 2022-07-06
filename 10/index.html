@@ -134,7 +134,7 @@
         <section class="booking">
           <h2 class="booking-title">Заинтересовались?</h2>
           <p class="booking-suggestion">
-            Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне
+            <span class="booking-suggestion-first-line">Укажите предполагаемые даты поездки,</span><br>и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
           <a class="button button-big" href="catalog.html">Поиск гостиницы в Cедоне</a>
         </section>
@@ -194,7 +194,9 @@
         </div>
 
         <form class="modal-find-form" action="https://echo.htmlacademy.ru" method="POST">
-          <label class="find-form-label" for="arrival-date">Дата заезда:</label>
+          <div class="find-form-label-wrapper">
+            <label class="find-form-label" for="arrival-date">Дата заезда:</label>
+          </div>
           <div class="find-date-field">
             <input class="find-date-input error" type="text" id="arrival-date" name="arrival-date" value="27 апреля 2020" placeholder="Укажите дату">
             <button class="find-date-calendar" type="button">
@@ -202,7 +204,9 @@
             </button>
           </div>
           <p class="find-date-notification error">Мы не можем отправить вас в прошлое.</p>
-          <label class="find-form-label" for="departure-date">Дата выезда:</label>
+          <div class="find-form-label-wrapper">
+            <label class="find-form-label" for="departure-date">Дата выезда:</label>
+          </div>
           <div class="find-date-field">
             <input class="find-date-input success" type="text" id="departure-date" name="departure-date" value="1 сентября 2021" placeholder="Укажите дату">
             <button class="find-date-calendar" type="button">
@@ -210,36 +214,46 @@
             </button>
           </div>
           <p class="find-date-notification success">На эти даты есть свободные номера. Пока есть.</p>
-          <label class="find-form-label" for="adults-count">Взрослые:</label>
+          <div class="find-form-label-wrapper">
+            <label class="find-form-label" for="adults-count">Взрослые:</label>
+          </div>
           <div class="counter-input">
             <button class="counter-button counter-decrease-button" type="button">
               <span class="visually-hidden">Уменьшить</span>
-              <svg class="counter-button-icon" width="21" height="20" viewBox="0 0 21 20" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M3.1 9v2h14V9h-14Z"/></svg>
+              <span class="counter-button-icon">
+                <svg width="13" height="1" viewBox="0 0 13 1" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M0 0v1h13V0H0Z"/></svg>
+              </span>
             </button>
             <input class="counter-field" type="number" id="adults-count" name="adults-count" value="2">
             <button class="counter-button counter-increase-button" type="button">
               <span class="visually-hidden">Увеличить</span>
-              <svg class="counter-button-icon" width="20" height="20" viewBox="0 0 20 20" aria-hidden="false" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/></svg>
+              <span class="counter-button-icon">
+                <svg width="13" height="13" viewBox="0 0 13 13" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/></svg>
+              </span>
             </button>
           </div>
-          <label class="find-form-label find-form-children-label" for="children-count">
-            Дети:
-            <span class="info-tooltip" id="chidlren-rules">
+          <div class="find-form-label-wrapper find-form-children-label">
+            <label class="find-form-label" for="children-count">Дети:</label>
+            <span class="info-tooltip">
               <button class="info-tooltip-toggle" type="button"><span class="visually-hidden" lang="en">Tooltip</span></button>
               <span class="info-tooltip-content">
                 Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
               </span>
             </span>
-          </label>
+          </div>
           <div class="counter-input">
             <button class="counter-button counter-decrease-button" type="button">
               <span class="visually-hidden">Уменьшить</span>
-              <svg class="counter-button-icon" width="21" height="20" viewBox="0 0 21 20" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M3.1 9v2h14V9h-14Z"/></svg>
+              <span class="counter-button-icon">
+                <svg width="13" height="1" viewBox="0 0 13 1" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M0 0v1h13V0H0Z"/></svg>
+              </span>
             </button>
             <input class="counter-field" type="number" id="children-count" name="children-count" value="1">
             <button class="counter-button counter-increase-button" type="button">
               <span class="visually-hidden">Увеличить</span>
-              <svg class="counter-button-icon" width="20" height="20" viewBox="0 0 20 20" aria-hidden="false" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/></svg>
+              <span class="counter-button-icon">
+                <svg width="13" height="13" viewBox="0 0 13 13" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/></svg>
+              </span>
             </button>
           </div>
           <button class="button button-additional button-big" type="submit">Найти</button>
