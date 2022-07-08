@@ -14,8 +14,15 @@
   font-display: swap;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
 }
 
 html {
@@ -31,11 +38,6 @@ body {
   font-size: 18px;
   line-height: 21px;
   background-color: #f2f2f2;
-}
-
-img {
-  display: block;
-  max-width: 100%;
 }
 
 /* Container */
@@ -92,6 +94,7 @@ img {
 
 .small-logo {
   position: absolute;
+  display: block;
 }
 
 .navigation-list {
@@ -228,6 +231,7 @@ img {
 }
 
 .welcome-message {
+  display: block;
   margin: 0 auto;
 }
 
@@ -313,6 +317,7 @@ img {
 }
 
 .reasons-image {
+  display: block;
   height: auto;
   object-fit: cover;
 }
@@ -1204,6 +1209,7 @@ img {
 }
 
 .hotels-image {
+  display: block;
   grid-row-start: 1;
   grid-column: 1 / -1;
   width: 100%;
